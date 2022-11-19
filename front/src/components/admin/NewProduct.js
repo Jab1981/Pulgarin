@@ -20,9 +20,10 @@ const NewProduct = () => {
     const [imagen, setImagen] = useState([]);
     const [imagenPreview, setImagenPreview] = useState([])
 
-    const categorias = [
+    const categories = [
         "Impresora 3D",
         "Placas"
+        
     ]
 
     const alert = useAlert();
@@ -135,7 +136,7 @@ const NewProduct = () => {
                                     <select className="form-control" 
                                     id="category_field" 
                                     value={categoria} onChange={(e) => setCategoria(e.target.value)}>
-                                        {categorias.map(categoria => (
+                                        {categories.map(categoria => (
                                             <option key={categoria} value={categoria} >{categoria}</option>
                                         ))}
 
@@ -193,7 +194,7 @@ const NewProduct = () => {
                                     className="btn btn-block py-3"
                                     disabled={loading ? true : false}
                                 >
-                                    CREAR
+                                    CREATE
                                 </button>
 
                             </form>

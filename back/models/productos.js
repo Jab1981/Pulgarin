@@ -39,8 +39,8 @@ const productosSchema=mongoose.Schema({
         enum:{
             values:[
                 "Impresora 3D",
-                "Placas"
-            ]
+                'Placas'
+                    ]
         }
     },
     vendedor:{
